@@ -1,1 +1,51 @@
 /* Write your CSS here */
+
+* {
+  box-sizing: border-box;
+  font-family: 'roboto';
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-container {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.popular-heading {
+  color: #0f172a;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Lobster';
+}
+
+.ul-list {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ul-languages-list {
+  margin-left: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
