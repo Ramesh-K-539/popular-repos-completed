@@ -3,10 +3,10 @@ import './index.css'
 
 const RepositoryItem = props => {
   const {repoDetails} = props
-  const {avatarUrl, starsCount, forksCount, issuesCount, id, name} = repoDetails
+  const {imageUrl, starsCount, forksCount, issuesCount, id, name} = repoDetails
   return (
     <li className="repos-list-item" key={id}>
-      <img src={avatarUrl} alt={name} className="repo-img" />
+      <img src={imageUrl} alt={name} className="repo-img" />
       <h1 className="repo-name">{name}</h1>
       <div className="count-container">
         <img
@@ -14,7 +14,7 @@ const RepositoryItem = props => {
           alt="stars"
           className="icon"
         />
-        <p className="counts-text">{starsCount}</p>
+        <p className="counts-text">{starsCount} stars</p>
       </div>
       <div className="count-container">
         <img
@@ -22,7 +22,7 @@ const RepositoryItem = props => {
           alt=" forks"
           className="icon"
         />
-        <p className="counts-text">{forksCount}</p>
+        <p className="counts-text">{forksCount} forks</p>
       </div>
       <div className="count-container">
         <img
@@ -30,7 +30,7 @@ const RepositoryItem = props => {
           alt="open issues"
           className="icon"
         />
-        <p className="counts-text">{issuesCount}</p>
+        <p className="counts-text">{issuesCount} issues</p>
       </div>
     </li>
   )

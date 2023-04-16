@@ -9,6 +9,9 @@
   padding: 30px;
   background-color: #f8f8ff;
   border-radius: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .repo-img {
@@ -31,6 +34,7 @@
 .icon {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .counts-text {
